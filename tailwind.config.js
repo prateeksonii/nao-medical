@@ -7,6 +7,7 @@ module.exports = {
         sans: "TodaySansNow Pro",
       },
       spacing: {
+        31: "31.74px",
         app: "414px",
       },
       colors: {
