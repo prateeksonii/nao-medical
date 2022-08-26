@@ -7,11 +7,16 @@ module.exports = {
         sans: "TodaySansNow Pro",
       },
       spacing: {
+        36: "36px",
         31: "31.74px",
+        15: "15px",
+        24: "24px",
         app: "414px",
       },
       colors: {
-        text: "#1E3565",
+        primary: "#1E3565",
+        secondary: "#9AD08C",
+        light: "#F3F3F3",
       },
     },
   },

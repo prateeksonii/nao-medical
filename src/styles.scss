@@ -19,6 +19,12 @@
   font-weight: 500;
 }
 
+@font-face {
+  font-family: 'TodaySansNow Pro';
+  src: url(./assets/fonts/TodaySansNow-Pro-Demi.otf);
+  font-weight: 600;
+}
+
 body {
   @apply bg-neutral-400;
 }
