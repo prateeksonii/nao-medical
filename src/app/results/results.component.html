@@ -1,0 +1,27 @@
+<div class="p-31">
+  <div class="flex items-center justify-between">
+    <h3 class="text-primary font-medium text-[22px]">Result</h3>
+    <button class="text-primary bg-secondary py-3 px-6 rounded-xl">Download Result</button>
+  </div>
+  <div class="p-2"></div>
+  <div class="space-y-3">
+    <div *ngFor="let result of resultsList" class="p-15 bg-light rounded-xl">
+      <div class="grid grid-cols-2 gap-2">
+        <div class="space-y-1">
+          <div class="text-primary text-[18px] font-medium flex items-center gap-1">{{result.title}} <img
+              src="../../assets/images/info.png" alt="">
+          </div>
+          <p class="text-[11px] font-medium">{{result.summary}}</p>
+        </div>
+        <div class="flex flex-col items-end pr-3">
+          <div class="text-[10px] font-bold flex items-baseline justify-end gap-2">
+            <span [ngClass]="[result.isNormal ? 'text-safe' : 'text-unsafe', 'text-[30px]']">{{result.value}}</span>
+            gm/dL
+          </div>
+          <div class="opacity-40 text-[12px]">Normal {{result.normalRange[0]}} to {{ result.normalRange[1] }} gm/dL
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

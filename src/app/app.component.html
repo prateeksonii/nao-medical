@@ -1,4 +1,4 @@
-<main class="mx-auto w-app bg-white h-screen relative -z-20">
+<main class="mx-auto w-app bg-white h-screen relative -z-20 overflow-hidden">
   <!-- Bg pattern -->
   <div class="absolute left-0 right-0 -z-10">
     <img src="../assets/images/header-pattern.png" alt="header pattern" width="414px" height="auto" class="w-full">
@@ -8,7 +8,11 @@
   <!-- Navbar -->
   <app-navbar></app-navbar>
   <div class="p-2"></div>
-  <app-header></app-header>
-  <app-appointment></app-appointment>
+  <div class="overflow-scroll no-scrollbar">
+    <app-header></app-header>
+    <app-appointment></app-appointment>
+    <app-results></app-results>
+  </div>
+  <div class="fixed bottom-0 z-10">bottombar</div>
 
 </main>
