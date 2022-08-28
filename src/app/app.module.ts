@@ -3,19 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HeaderComponent } from './header/header.component';
-import { AppointmentComponent } from './appointment/appointment.component';
-import { ResultsModule } from './results/results.module';
+import { BottomNavbarComponent } from './bottom-navbar/bottom-navbar.component';
+import { MainModule } from './main/main.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HeaderComponent,
-    AppointmentComponent,
-  ],
-  imports: [BrowserModule, ResultsModule],
-  providers: [],
+  declarations: [AppComponent, NavbarComponent, BottomNavbarComponent],
+  imports: [BrowserModule, MainModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

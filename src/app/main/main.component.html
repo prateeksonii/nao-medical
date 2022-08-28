@@ -1,0 +1,7 @@
+<div class="overflow-y-scroll h-[calc(100%-200px)] z-10" (mousewheel)="onScroll($event)" #header>
+  <div [ngClass]="showHeader ? 'scale-1' : 'scale-0'" class="transition-all">
+    <app-header></app-header>
+  </div>
+  <app-appointment></app-appointment>
+  <app-results></app-results>
+</div>
