@@ -27,16 +27,8 @@ export class MainComponent implements AfterViewInit {
   }
 
   onScroll(event: Event) {
-    console.log(event);
     const { deltaY } = event as WheelEvent;
-
     if (deltaY > 0) this.showHeader = false;
     else this.showHeader = true;
-
-    // if (scrollTop > 0) {
-    //   this.showHeader = false;
-    // } else {
-    //   this.showHeader = false;
-    // }
   }
 }
