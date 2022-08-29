@@ -1,4 +1,9 @@
-# NaoMedical
+# NaoMedical Assessment
+
+Tech Stack used:
+- Angular 14.1
+- TailwindCSS
+- SCSS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
